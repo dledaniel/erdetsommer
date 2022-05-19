@@ -38,7 +38,7 @@ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 document.getElementById("count").innerHTML = days + "d " + hours + "t "
-  + minutes + "m " + seconds + "s " + "til sommer.";
+  + minutes + "m " + seconds + "s " + "<br> til sommer.";
 
 if (distance < 0) {
     clearInterval(x);
