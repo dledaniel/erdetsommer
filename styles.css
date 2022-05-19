@@ -19,6 +19,7 @@ h1 {
 h2 {
     font-size: 48pt;
     text-align: center;
+    line-height: 4em;
     color: var(--main-color);
 }
 
