@@ -9,6 +9,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <script>
+var countDownDate = new Date("Jun 21, 2022 00:00:01").getTime();
+var x = setInterval(function() {
+
+var now = new Date().getTime();
+
+var distance = countDownDate - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("count").innerHTML = days + "d " + hours + "t "
+  + minutes + "m " + seconds + "s " + "til sommer.";
+
+if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("count").innerHTML = "Det er sommer";
+  }
+}, 1000);
+
 function isitSummer(){
     const date = new Date();
 
@@ -33,6 +54,9 @@ function isitSummer(){
 <h1>Er det sommer?</h1>
 
 <h2 id="answer" class=""></h2>
+
+<a href="https://www.google.com/search?q=sommer&oq=sommer&aqs=chrome..69i57j35i39l2j0i433i512j0i512j69i60l3.546j0j9&sourceid=chrome&ie=UTF-8" target="blank" id="count" class=""></a>
+
 
 <div class="footer">
     <p>Udviklet af Daniel Le <br> København, 2022</p>

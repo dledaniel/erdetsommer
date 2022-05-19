@@ -1,29 +1,42 @@
+:root {
+    --main-color:rgb(239, 230, 215);
+    --bg-color:rgb(57, 189, 95);
+}
+
 body {
-    background-color: rgb(238, 231, 220);
+    background-color: var(--bg-color);
+    font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
     font-size: 36pt;
-    font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     text-align: center;
     line-height: 4em;
-    color: rgb(255, 225, 0);
+    color: var(--main-color);
 }
+
 
 h2 {
     font-size: 48pt;
-    font-family: 'Roboto Mono', monospace;
     text-align: center;
-    color: rgb(255, 225, 0);
+    color: var(--main-color);
+}
+
+a {
+    font-size: 28pt;
+    text-align: center;
+    color: var(--main-color);
+    text-decoration: none;
+    display: block;
 }
 
 .yes {
-    color: rgb(255, 225, 0);
+    color: var(--main-color);
 }
 
 .no {
-    color: rgb(255, 225, 0);
+    color: var(--main-color);
 }
 
 .hidden {
@@ -33,13 +46,12 @@ h2 {
 .footer {
     position: fixed;
     font-weight: 400;
-    font-family: 'Roboto Mono', monospace;
     left: 0;
     bottom: 0;
     display: block;
     width: 100%;
-    background-color: rgb(255, 225, 0);
-    color: white;
+    background-color: var(--main-color);
+    color: var(--bg-color);
     text-align: center;
   }
 
