@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(238, 231, 220);
 }
 
 h1 {
@@ -8,22 +8,22 @@ h1 {
     font-weight: 400;
     text-align: center;
     line-height: 4em;
-    color: rgb(0, 0, 255);
+    color: rgb(255, 225, 0);
 }
 
 h2 {
     font-size: 48pt;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    color: rgb(0, 0, 255);
+    color: rgb(255, 225, 0);
 }
 
 .yes {
-    color: rgb(0, 0, 255);
+    color: rgb(255, 225, 0);
 }
 
 .no {
-    color: rgb(0, 0, 255);
+    color: rgb(255, 225, 0);
 }
 
 .hidden {
@@ -38,7 +38,7 @@ h2 {
     bottom: 0;
     display: block;
     width: 100%;
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(255, 225, 0);
     color: white;
     text-align: center;
   }
