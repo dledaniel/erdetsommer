@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Er det fredag?</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<script>
+function isitSummer(){
+    const date = new Date();
+
+    const start = new Date('2022-06-21');
+    const end = new Date('2022-11-22');
+
+    var elem = document.getElementById("answer");
+    if (date > start && date < end) {
+        elem.innerHTML = "Ja";
+        elem.className = "yes"; 
+    }
+    else {
+        elem.innerHTML = "Nej, sommer begynder d. 21. juni 2022";
+        elem.className ="no";
+    }
+}
+</script>
+</head>
+
+<body onLoad="isitSummer();">
+
+<h1>Er det sommer?</h1>
+
+<h2 id="answer" class=""></h2>
+
+<div class="footer">
+    <p>Udviklet af Daniel Le <br> København, 2022</p>
+  </div>
+
+</body>
+</html>

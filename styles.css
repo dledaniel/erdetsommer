@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+h1 {
+    font-size: 36pt;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    text-align: center;
+    line-height: 4em;
+    color: rgb(0, 0, 255);
+}
+
+h2 {
+    font-size: 48pt;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: rgb(0, 0, 255);
+}
+
+.yes {
+    color: rgb(0, 0, 255);
+}
+
+.no {
+    color: rgb(0, 0, 255);
+}
+
+.hidden {
+    display: none;
+}
+  
+.footer {
+    position: fixed;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    text-align: center;
+  }
+
+  
